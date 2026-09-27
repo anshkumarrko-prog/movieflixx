@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watchlist</title>
+    <!-- Link to the primary stylesheet for unified design -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Keep getstarted.css for page-specific styles if needed -->
+    <link rel="stylesheet" href="getstarted.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Movieflix</div>
+            <ul>
+                <li><a href="index.html">back to Home</a></li>
+                <li><a href="findmyfilm.html">Search Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>My Watchlist</h2>
+            <div class="search-bar">
+                <input type="text" class="search-input" id="watchlist-search-input" placeholder="Search  movies...">
+            </div>
+
+            <div class="empty-state">
+                <svg class="empty-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H9l2 4H8L6 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+                </svg>
+                <div class="empty-title">Your watchlist is empty</div>
+                <div class="empty-subtitle">Search above or go back to add items to your list.</div>
+            </div>
+            <div id="watchlist-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MovieApp. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Film - Movieflix</title>
+    <!-- Primary stylesheet for unified design -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Watchlist and form container styling -->
+    <link rel="stylesheet" href="getstarted.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Movieflix</div>
+            <ul>
+                <li><a href="index.html">back to Home</a></li>
+                <li><a href="getstarted.html">My Watchlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Find My Film</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-muted, #94a3b8);">Search for any movie title or discover recommendations across genres.</p>
+            
+            <div class="search-bar">
+                <input type="text" class="search-input" id="movie-search-input" placeholder="Type a movie title, genre, or actor...">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <!-- Initial state before search results load -->
+            <div class="empty-state" id="search-placeholder">
+                <svg class="empty-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <div class="empty-title">Find your next favorite movie</div>
+                <div class="empty-subtitle">Type a movie name in the search bar above to see results.</div>
+            </div>
+
+            <!-- Dynamic container for rendered movie results -->
+            <div id="movie-results-container" style="display: none;">
+                <!-- JavaScript will dynamically render movie cards here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movieflix. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
